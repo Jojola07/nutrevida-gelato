@@ -211,7 +211,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, #6a9e55);
+    background: linear-gradient(to bottom, transparent, #8db87a);
     z-index: 2;
 }
 
@@ -222,7 +222,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, #6a9e55);
+    background: linear-gradient(to bottom, transparent, #0a0a0a);
     z-index: 1;
 }
 
@@ -232,6 +232,66 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, #6a9e55, transparent);
+    background: linear-gradient(to bottom, #8db87a, transparent);
     z-index: 1;
+}
+
+#sobre {
+    background: #0a0a0a;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre {
+    max-width: 700px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    color: var(--verde);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contato {
+    background-color: #0a0a0a;
+    padding: 80px 60px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    color: var(--verde);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#contato h3 {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0a0a0a;
+    border-top: 2px solid var(--verde);
+    padding: 30px 60px;
+    text-align: center;
+}
+
+footer p {
+    color: #7a7a7a;
+    font-size: 0.85rem;
 }
