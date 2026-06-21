@@ -204,14 +204,14 @@ nav ul li a:hover {
     font-size: 0.9rem;
 }
 
-.hero::after {
+#hero::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    background: linear-gradient(to bottom, transparent, #6a9e55);
     z-index: 2;
 }
 
@@ -222,7 +222,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    background: linear-gradient(to bottom, transparent, #6a9e55);
     z-index: 1;
 }
 
@@ -232,20 +232,6 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     height: 120px;
-    background: linear-gradient(to bottom, #0a0a0a, transparent);
+    background: linear-gradient(to bottom, #6a9e55, transparent);
     z-index: 1;
 }
-
-erro do devtools: VM4 sandbox_bundle:2 Unable to load preload script: /app/share/codium/resources/app/out/vs/platform/browserView/electron-browser/preload-browserView.js
-executeSandboxedPreloadScripts @ VM4 sandbox_bundle:2
-(anonymous) @ VM4 sandbox_bundle:2
-(anonymous) @ VM4 sandbox_bundle:2
-___electron_webpack_init__ @ VM4 sandbox_bundle:2
-(anonymous) @ VM4 sandbox_bundle:2
-VM4 sandbox_bundle:2 SyntaxError: Unexpected token 'export'
-    at runPreloadScript (VM4 sandbox_bundle:2:144336)
-    at executeSandboxedPreloadScripts (VM4 sandbox_bundle:2:143631)
-    at VM4 sandbox_bundle:2:156766
-    at VM4 sandbox_bundle:2:156968
-    at ___electron_webpack_init__ (VM4 sandbox_bundle:2:156972)
-    at VM4 sandbox_bundle:2:157095
