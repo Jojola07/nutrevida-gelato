@@ -99,7 +99,7 @@ nav ul li a:hover {
 
 .hero-conteudo {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,3 +134,118 @@ nav ul li a:hover {
 .btn:hover {
     background-color: var(--verde-escuro);
 }
+
+#produtos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 60px;
+}
+
+#produtos::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('flocospicole.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.5);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+#produtos h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: var(--branco);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px 30px;
+    width: 260px;
+    border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translate(-8x);
+}
+
+.card h3 {
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: var(--bege);
+    font-size: 0.9rem;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    z-index: 2;
+}
+
+#produtos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    z-index: 1;
+}
+
+.fade-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, #0a0a0a, transparent);
+    z-index: 1;
+}
+
+erro do devtools: VM4 sandbox_bundle:2 Unable to load preload script: /app/share/codium/resources/app/out/vs/platform/browserView/electron-browser/preload-browserView.js
+executeSandboxedPreloadScripts @ VM4 sandbox_bundle:2
+(anonymous) @ VM4 sandbox_bundle:2
+(anonymous) @ VM4 sandbox_bundle:2
+___electron_webpack_init__ @ VM4 sandbox_bundle:2
+(anonymous) @ VM4 sandbox_bundle:2
+VM4 sandbox_bundle:2 SyntaxError: Unexpected token 'export'
+    at runPreloadScript (VM4 sandbox_bundle:2:144336)
+    at executeSandboxedPreloadScripts (VM4 sandbox_bundle:2:143631)
+    at VM4 sandbox_bundle:2:156766
+    at VM4 sandbox_bundle:2:156968
+    at ___electron_webpack_init__ (VM4 sandbox_bundle:2:156972)
+    at VM4 sandbox_bundle:2:157095
