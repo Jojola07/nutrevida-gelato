@@ -198,10 +198,18 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translate(-8x);
+    transform: translateY(-8x);
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px rgba(141, 184, 122, 0.3);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 .card h3 {
